@@ -46,7 +46,6 @@ export const register = ({ name, email, password }) => async (dispatch) => {
       type: REGISTER_SUCCESS,
       payload: res.data,
     });
-    dispatch(loadUser());
   } catch (error) {
     const errors = error.response.data.errors;
 
@@ -61,7 +60,7 @@ export const register = ({ name, email, password }) => async (dispatch) => {
 };
 
 //******************************login User**********************////
-export const login = ({ email, password }) => async (dispatch) => {
+export const login = (email, password) => async (dispatch) => {
   const config = {
     headers: {
       'Content-Type': 'application/json',
@@ -76,7 +75,6 @@ export const login = ({ email, password }) => async (dispatch) => {
       type: LOGIN_SUCCESS,
       payload: res.data,
     });
-    dispatch(loadUser());
   } catch (error) {
     const errors = error.response.data.errors;
 
