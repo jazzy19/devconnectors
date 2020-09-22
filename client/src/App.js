@@ -4,8 +4,11 @@ import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
+
 import Alert from './components/layout/Alert';
 import Dashboard from './components/dashboard/Dashboard';
+import Feedback from './components/dashboard/Feedback';
+import Home from './components/dashboard/Home';
 import PrivateRoute from './components/routing/PrivateRoute';
 
 import { loadUser } from './actions/auth';
@@ -34,6 +37,8 @@ const App = () => {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/feedback" component={Feedback} />
+              <PrivateRoute exact path="/home" component={Home} />
             </Switch>
           </section>
         </Fragment>

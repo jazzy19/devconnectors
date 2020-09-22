@@ -29,11 +29,14 @@ a {
 ul {
   list-style: none;
 }
+h3 {
+  color: white;
+}
 
 img {
   width: 100%;
 }
-
+  
 /* Utilities */
 .container {
   max-width: 1100px;
@@ -145,7 +148,7 @@ img {
   text-align: center;
   margin: 0.3rem;
   background: var(--light-color);
-  color: #333;
+  color: black;
 }
 
 .alert {
