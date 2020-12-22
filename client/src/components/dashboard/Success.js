@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';  
+import { Link, Redirect } from 'react-router-dom';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 export default class Success extends Component {
@@ -14,6 +14,15 @@ export default class Success extends Component {
           <h3>Your Feedback Would be Valueable to Us!</h3>
           <p className="my-1">
             <Link to="/feedback">Feedback</Link>
+
+            <br></br>
+            <a
+              rel="noopener noreferrer"
+              href="http://localhost:3001/"
+              target="_blank"
+            >
+              Edit Here
+            </a>
           </p>
         </div>
       </div>

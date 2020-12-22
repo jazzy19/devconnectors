@@ -3,16 +3,12 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
-import Image from 'react-bootstrap/Image'
-
-
+import Image from 'react-bootstrap/Image';
 
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
-      <li>
-      
-      </li>
+      <li></li>
       <li>
         <Link to="/dashboard">
           <i className="fas fa-user" />{' '}
@@ -38,7 +34,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to="/profiles">About Us</Link>
+        <Link to="/about">About Us</Link>
       </li>
       <li>
         <Link to="/register">Register</Link>
@@ -53,7 +49,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className="navbar bg-dark">
       <h1>
         <Link to="/">
-          <i class="far fa-file"></i> CV RESUME{' '}
+          <i class="far fa-file"></i> RESUME BUILDER{' '}
         </Link>
       </h1>
       {!loading && (

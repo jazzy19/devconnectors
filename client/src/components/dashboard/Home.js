@@ -4,7 +4,7 @@ import { getCurrentProfile } from '../../actions/profile';
 import PropTypes from 'prop-types';
 import Spinner from '../layout/Spinner';
 import UserForm from './UserForm';
-import Image from 'react-bootstrap/Image'
+import Image from 'react-bootstrap/Image';
 
 const Dashboard = ({
   getCurrentProfile,
@@ -19,7 +19,7 @@ const Dashboard = ({
   ) : (
     <Fragment>
       <p className="lead" align="center">
-        <i className="fas fa-user" /> Welcome {user && user.name } <Image src={user && user.avatar} roundedCircle />
+        <i className="fas fa-user" /> Welcome {user && user.name}
       </p>
       <UserForm />
     </Fragment>
